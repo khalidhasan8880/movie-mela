@@ -19,7 +19,7 @@ const page = async () => {
     <section>
       <h2>Movies</h2>
       <div className="grid grid-cols-1  lg:grid-cols-3 gap-4 flex-wrap">
-      {main_data.map((movie) => (
+      {main_data?.map((movie) => (
         <MovieCard key={movie.jawSummary.id} movie={movie.jawSummary}></MovieCard>
       ))}
       </div>
