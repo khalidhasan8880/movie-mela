@@ -1,3 +1,4 @@
+
 import MovieCard from "../components/MovieCard/MovieCard";
 
 const page = async () => {
@@ -13,13 +14,12 @@ const page = async () => {
 
   const response = await fetch(url, options);
   const result = await response.json();
-  const main_data = result.titles;
 
   return (
     <section>
       <h2>Movies</h2>
       <div className="grid grid-cols-1  lg:grid-cols-3 gap-4 flex-wrap">
-      {main_data?.map((movie) => (
+      {result?.titles?.map((movie) => (
         <MovieCard key={movie.jawSummary.id} movie={movie.jawSummary}></MovieCard>
       ))}
       </div>
