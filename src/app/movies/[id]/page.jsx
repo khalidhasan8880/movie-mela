@@ -4,7 +4,7 @@ const page = async({params}) => {
 
     const id = params.id
 
-
+j
 
 
     console.log(id);
