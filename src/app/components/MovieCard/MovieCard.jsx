@@ -2,8 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 const MovieCard = ({ movie }) => {
+  console.log(movie);
     const {backgroundImage, id} = movie
-    console.log(movie);
+    
   return (
     <div className="card sm:card-side bg-gray-900 shadow-xl p-2 ">
       <figure>
